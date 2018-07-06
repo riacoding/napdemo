@@ -1,0 +1,277 @@
+html {
+  box-sizing: border-box;
+  background:#eeeeee;
+  font-family:'helvetica neue';
+  font-size: 20px;
+  font-weight: 200;
+}
+body {
+  margin: 0;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.site-wrap {
+  max-width: 700px;
+  margin: 70px auto;
+  background:white;
+  padding:40px;
+  text-align: justify;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+  transform: scale(0.98);
+  transition: transform 0.5s;
+}
+
+body.fixed-nav .site-wrap {
+  transform: scale(1);
+}
+
+
+header {
+  text-align: center;
+  height:25vh;
+  background:url(/134-cover.jpg) bottom center no-repeat;
+  background-size:cover;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+h1 {
+  color:white;
+  font-size: 7vw;
+  text-shadow: 3px 4px 0 rgba(0,0,0,0.2)
+}
+
+input[type="text"]
+{
+    font-size:18px;
+    border-style: none;
+}
+
+nav {
+  background:rgba(255,255,255,1);
+  top:0;
+  width: 100%;
+  transition:all 0.3s;
+  position: relative;
+  z-index: 1;
+  display:flex;
+}
+
+body.fixed-nav nav {
+  position: fixed;
+  /*box-shadow: 3px 4px 5px rgba(0,0,0,0.3)*/
+}
+
+nav ul {
+  margin: 0;
+  padding:0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color:#00a9a7;   
+}
+
+.header-box {
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height:128px;
+  width:128px;
+  background: url(/nap-logo2@0-5x.jpg) no-repeat;
+  background-size: 128px 128px;
+  border-radius: 0px;
+  
+}
+
+#imagelogo {
+  background: url(/nap-logo@0-5x.jpg) no-repeat;
+}
+
+nav ul li {
+  display: flex;
+  display: inline; 
+}
+
+nav ul li.logo {
+  width: 64px;
+  height: 64px;
+}
+
+
+
+nav ul.navigation {
+  flex: 2;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+nav ul.navigation li a:hover {
+  color: #00C7C5;
+}
+
+
+
+nav ul.social li {
+  padding-right: 8px;
+
+}
+
+nav ul.social li i {
+  transform: scale(0.95);
+}
+
+nav ul.social li i:hover{
+  transform: scale(1.0);
+  color:#00C7C5;
+}
+
+nav ul.search {
+  flex:1;
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+
+nav ul.search form {
+  padding-right: 10px;
+}
+
+li.logo {
+  max-width:0;
+  overflow: hidden;
+  background: white;
+  transition: all 0.5s;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 0;
+}
+
+li.logo a {
+  color:#00a9a7;  
+  max-width:64px;
+  max-height:64px;
+}
+
+li.logo a img{
+  overflow: hidden;
+}
+
+.fixed-nav li.logo {
+  max-width:64px;
+  max-height:64px;
+}
+
+.fixed-nav li.logo a {
+ padding:0px;
+}
+
+ul.navigation li + li + li::before {
+    content: " | ";
+    color: #00a9a7;
+}
+
+ul.social li {
+  font-size: 30px;
+
+}
+
+ul.search form {
+  
+  margin:0;
+  border: 1px solid #00a9a7;
+}
+
+ul.search form button {
+  font-size: 18px;
+  border-style: none;
+  padding:0;
+  background:rgba(0,0,0,0);
+}
+
+ul.search form button i:hover {
+  color: #00C7C5;
+}
+
+
+ul.search form button i {
+   font-size: 17px;
+   color: #00a9a7;
+  
+}
+
+nav a {
+  text-decoration: none;
+  padding:20px;
+  display: inline-block;
+  color: #00a9a7;
+  transition:all 0.2s;
+  text-transform: capitalize;
+}
+
+.previous-issues {
+   display:flex;
+   text-align: center;
+   justify-content: center;
+}
+
+.issue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: capitalize;
+  height:32px;
+  width: 128px;
+  padding: 3px;
+  color:#eeeeee;
+  font-weight: 400;
+  transform: scale(0.98);
+  
+}
+
+.issue:hover {
+  transform: scale(1.0);
+  border: 1px solid slategray;
+ 
+}
+
+.cta-text {
+  padding: 0 15px 0 15px;
+  font-size: 12px;
+}
+
+.color1 {
+  background-color:#45AEC4;
+  
+}
+
+.color2 {
+  background-color:#D5213A;
+}
+
+.color3 {
+  background-color:#E6BD55;
+}
+
+.color4 {
+  background-color:#D32182;
+}
+
+.color5 {
+  background-color:#B0C14F;
+}
+
+.color6 {
+  background-color:#E07836;
+}
+
+.featured {
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color:#00A9A7;
+}
+}
